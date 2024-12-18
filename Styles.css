@@ -59,16 +59,36 @@ nav {
     justify-content: center;
     align-items: center;
     text-align: center;
-    background: linear-gradient(to right, #007B7F, #00C1C1);
-    color: white;
+    background-image: url("Assets/Hero.jpg");
+    background-size: cover;
 }
 .hero h1 {
     font-size: 4rem;
+    color:rgb(0, 0, 0);
 }
-.hero p {
-    margin: 30px 0;
-    font-size: 1.2rem;
+.hero h2{
+    font-size: 2rem;
+    color:rgb(0, 0, 0);
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.8), 
+    0 0 20px rgba(255, 255, 255, 0.6), 
+    0 0 30px rgba(255, 255, 255, 0.4), 
+    0 0 40px rgba(255, 255, 255, 0.2); 
+    animation: glow 1.5s infinite;
 }
+@keyframes glow { 0% { text-shadow: 0 0 5px rgba(255, 255, 255, 0.8), 
+                                    0 0 10px rgba(255, 255, 255, 0.6), 
+                                    0 0 15px rgba(255, 255, 255, 0.4), 
+                                    0 0 20px rgba(255, 255, 255, 0.2); 
+                } 50% { text-shadow: 0 0 20px rgba(255, 255, 255, 0.8), 
+                                    0 0 30px rgba(255, 255, 255, 0.6), 
+                                    0 0 40px rgba(255, 255, 255, 0.4), 
+                                    0 0 50px rgba(255, 255, 255, 0.2); 
+                } 100% { text-shadow: 0 0 5px rgba(255, 255, 255, 0.8), 
+                                    0 0 10px rgba(255, 255, 255, 0.6), 
+                                    0 0 15px rgba(255, 255, 255, 0.4), 
+                                    0 0 20px rgba(255, 255, 255, 0.2); 
+                        }
+                 }
 .hero .btn {
     background: white;
     color: #007B7F;
@@ -133,10 +153,15 @@ nav {
 }
 .project img {
     width: 100%;
-    height: auto;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
 }
+
 .project-details {
-    padding: 20px;
+    padding: 20px; 
+    padding-bottom: 20px;
+    background-color: #333;
 }
 
 /* Contact Section */
