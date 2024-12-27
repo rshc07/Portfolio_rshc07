@@ -27,3 +27,19 @@ function submitToGoogleSheets(event) {
             alert('There was an error sending your message. Please try again later.');
         });
 }
+
+window.addEventListener('scroll', function() {
+    const segments = document.querySelectorAll('.hero, .section.about, .section.skills, .section.projects, .section');
+    const navContainer = document.querySelector('.nav-container');
+    let cachedBackgroundColor = null;
+
+    segments.forEach(segment => {
+        const rect = segment.getBoundingClientRect();
+        if (rect.top <= 0 && rect.bottom >= 0) {
+            if (!cachedBackgroundColor) {
+                cachedBackgroundColor = window.getComputedStyle(segment).backgroundColor;
+            }
+            navContainer.style.background = cachedBackgroundColor;
+        }
+    });
+});
