@@ -28,18 +28,19 @@ function submitToGoogleSheets(event) {
         });
 }
 
-window.addEventListener('scroll', function() {
-    const segments = document.querySelectorAll('.hero, .section.about, .section.skills, .section.projects, .section');
-    const navContainer = document.querySelector('.nav-container');
-    let cachedBackgroundColor = null;
+/*Not required for now*/
+// window.addEventListener('scroll', function() {
+//     const segments = document.querySelectorAll('.hero, .section.about, .section.skills, .section.projects, .section');
+//     const navContainer = document.querySelector('.nav-container');
+//     let cachedBackgroundColor = null;
 
-    segments.forEach(segment => {
-        const rect = segment.getBoundingClientRect();
-        if (rect.top <= 0 && rect.bottom >= 0) {
-            if (!cachedBackgroundColor) {
-                cachedBackgroundColor = window.getComputedStyle(segment).backgroundColor;
-            }
-            navContainer.style.background = cachedBackgroundColor;
-        }
-    });
-});
+//     segments.forEach(segment => {
+//         const rect = segment.getBoundingClientRect();
+//         if (rect.top <= 0 && rect.bottom >= 0) {
+//             if (!cachedBackgroundColor) {
+//                 cachedBackgroundColor = window.getComputedStyle(segment).backgroundColor;
+//             }
+//             navContainer.style.background = cachedBackgroundColor;
+//         }
+//     });
+// });
