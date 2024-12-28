@@ -147,6 +147,76 @@ nav {
     transform: translateY(-5px);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
 }
+/*Section*/
+.section-about {
+    display: flex;
+    align-items: center;
+    background: #e1e6e5;
+    justify-content: space-between;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    gap: 20px;
+}
+/* Styling for Text Content */
+.about-text {
+    flex: 1; /* Allow text section to take up flexible space */
+}
+.about-text h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+.about-text p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #555;
+}
+.section-about .container { 
+    flex: 1; /* Takes up equal space as about-image */ 
+    display: flex;
+    text-align: left; /* Align text to the left */ 
+    justify-content: flex-start; /* Ensure text is on the left side */
+}
+.about-image {
+    flex: 1; /* Allow image section to take up flexible space */
+    display: flex;
+    justify-content: center; /* Center image horizontally */
+    margin-left: 40px; /* Add space between text and image */
+    
+}
+.section-about .about-image img { 
+    max-width: 100%; /* Ensure the image is responsive */ 
+    width: 500px;
+    height: 700px; /* Maintain aspect ratio */ 
+    border-radius: 8px; /* Optional: Add rounded corners to the image */ 
+    box-shadow: 0 20px 10px rgba(0, 0, 0, 0.1); /* Add a shadow effect to the image */
+    margin-left: 120px;
+}
+.section-skills {
+    background: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.section-projects {
+    background: #e1e6e5;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.section-contact {
+    background: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
 
 /* About Me Section */
 .about {
