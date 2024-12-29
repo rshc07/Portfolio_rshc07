@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hemachandran-rs-Full-Stack Java Developer</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/ionicons@5.5.2/css/ionicons.min.css">
     <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
     <link rel="stylesheet" href="Styles.css">
     <script src="Script.js"></script>
@@ -52,7 +53,7 @@
                 <li>
                     Led automation initiatives based on specific client requirements, developed quality metrics 
                     for drafted designs to calculate impacted areas, optimized equipment 
-                    usage tracking, and performed clustering analysis on high-priority tasks to optimize equipment usage.
+                    usage, and performed clustering analysis using design view scripts.
                 </li>
                 <li> 
                      In addition to my professional experience, I have earned a Java Full-Stack Developer certification 
@@ -66,7 +67,10 @@
                 </li>
                 <li> I am open to freelance projects and collaborations. If you<br> 
                     have any project ideas or just want to chat, feel free to<br> 
-                    reach out to me!
+                    reach out to me! <a href="#contact" class="fas fa-arrow-up-right-from-square"
+                    style="color: #000;" 
+                    onmouseover="this.style.color='#007B7F'" 
+                    onmouseout="this.style.color='#000'"></a>
                 </li>
                 </ul>
             </p>
@@ -84,7 +88,9 @@
                 <div class="skill">
                     <h3>Languages</h3>
                     <ul>
-                        <li><i class="fas fa-code"></i>Java</li> 
+                        <li> 
+                            <img src="Assets/java.png" alt="Java Icon" class="icon2"> Java 
+                        </li> 
                         <li><i class="fab fa-js-square"></i> JavaScript</li> 
                         <li><i class="fab fa-html5"></i> HTML</li> 
                         <li><i class="fab fa-css3-alt"></i> CSS</li> 
@@ -109,13 +115,13 @@
                         <li><i class="fab fa-github"></i> GitHub</li> 
                         <li><i class="fas fa-tools"></i> Maven</li> 
                         <li> 
-                            <img src="Assets/SmallWorld.png" alt="KeyCom Icon" class="icon1"> SmallWorld 
+                            <img src="Assets/SmallWorld.png" alt="KeyCom Icon" class="icon1">SmallWorld 
                         </li>  
                         <li> 
-                            <img src="Assets/KeyCom.svg" alt="KeyCom Icon" class="icon"> KeyCom 
+                            <img src="Assets/KeyCom.svg" alt="KeyCom Icon" class="icon">KeyCom 
                         </li> 
-                        <li><i class="fas fa-layer-group"></i> INCA</li> 
-                        <li><i class="fas fa-map-marked-alt"></i> QGIS</li>
+                        <li><i class="fas fa-layer-group"></i>INCA</li> 
+                        <li><i class="fas fa-map-marked-alt"></i>QGIS</li>
                     </ul>
                 </div>
                 <div class="skill">
@@ -155,30 +161,74 @@
             <div class="projects">
                 <div class="project">
                     <img src="/Assets/weather-api.jpg" alt="Weather API Application">
-                    <div class="project-details">
+                    <div class="project-details" id="WeatherAPI">
                         <h3>Weather API Application</h3>
-                        <p>A weather information app leveraging OpenAI's generative AI to answer user queries about the weather.</p>
+                        <p>This project is a Spring Boot application that provides weather information using OpenAI's chat services. The application retrieves current weather data for a specified city through a RESTful API.</p>
+                        <div class="skills-span"> 
+                            <span class="skill-tag">Java</span> 
+                            <span class="skill-tag">Spring Boot</span> 
+                            <span class="skill-tag">OpenAI</span> 
+                            <span class="skill-tag">RESTful API</span>
+                            <span class="skill-tag">Weather API</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/rshc07/OpenAi_WeatherAPI" target="_blank"><i class="fab fa-github"></i>Code</a>
+                            <a href="https://github.com/rshc07/OpenAi_WeatherAPI/blob/main/README.md" target="_blank"><i class="fas fa-arrow-up-right-from-square"></i>Preview</a>
+                        </div>                        
                     </div>
                 </div>
                 <div class="project">
                     <img src="/Assets/bus-ticket.jpg" alt="Online Bus Ticket Booking">
-                    <div class="project-details">
+                    <div class="project-details" id="BusTicket">
                         <h3>Online Bus Ticket Booking App</h3>
-                        <p>A secure ticket booking system with real-time bus search functionality.</p>
+                        <p>This is a web-based Spring Boot application that allows users to search for buses, book tickets, manage bookings, and update their personal information.</p>
+                        <div class="skills-span"> 
+                            <span class="skill-tag">Java</span> 
+                            <span class="skill-tag">Spring Boot</span> 
+                            <span class="skill-tag">Spring Data JPA</span> 
+                            <span class="skill-tag">Thymeleaf</span>
+                            <span class="skill-tag">MySQL</span>  
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/rshc07/Spring-Online-Bus-Ticket-Booking-App" target="_blank"><i class="fab fa-github"></i>Code</a>
+                            <a href="https://github.com/rshc07/Spring-Online-Bus-Ticket-Booking-App/blob/main/Online%20Bus%20Ticket%20Booking.mp4" target="_blank"><i class="fas fa-arrow-up-right-from-square"></i>Preview</a>
+                        </div>
                     </div>
                 </div>
                 <div class="project">
                     <img src="/Assets/employee-managment.jpg" alt="Employee Management System">
-                    <div class="project-details">
+                    <div class="project-details" id="EmployeeManagement">
                         <h3>Employee Management System</h3>
-                        <p>A web-based system for managing employee data and operations.</p>
+                        <p>This is a Spring boot application that allows users to manage employees details. It includes functionalities to create, read, update, and delete employees.</p>
+                        <div class="skills-span"> 
+                            <span class="skill-tag">Java</span> 
+                            <span class="skill-tag">Spring Boot</span> 
+                            <span class="skill-tag">Spring Data JPA</span> 
+                            <span class="skill-tag">Thymeleaf</span>
+                            <span class="skill-tag">MySQL</span>  
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/rshc07/Spring-Employee-management-App" target="_blank"><i class="fab fa-github"></i>Code</a>
+                            <a href="https://github.com/rshc07/Spring-Employee-management-App/blob/main/Video_240805184434.mp4" target="_blank"><i class="fas fa-arrow-up-right-from-square"></i>Preview</a>
+                        </div>
                     </div>
                 </div>
                 <div class="project">
                     <img src="/Assets/medical-appointment.jpg" alt="Medical Appointment System">
-                    <div class="project-details">
+                    <div class="project-details" id="MedicalAppointment">
                         <h3>Medical Appointment System</h3>
-                        <p>A healthcare app for managing patient appointments and medical data.</p>
+                        <p>This is a Spring Boot application that allows users to manage medication-related operations, It includes functionalities to book appoitment, appoitment modification and also create, read, update, and delete Operations on medication data.</p>
+                        <div class="skills-span"> 
+                            <span class="skill-tag">Java</span> 
+                            <span class="skill-tag">Spring Boot</span> 
+                            <span class="skill-tag">Spring Data JPA</span> 
+                            <span class="skill-tag">Thymeleaf</span>
+                            <span class="skill-tag">MySQL</span> 
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/rshc07/Spring-Medical-Appointment-System" target="_blank"><i class="fab fa-github"></i>Code</a>
+                            <a href="https://github.com/rshc07/Spring-Medical-Appointment-System/blob/main/Medical%20Appointment%20System.mp4" target="_blank"><i class="fas fa-arrow-up-right-from-square"></i>Preview</a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -193,7 +243,7 @@
                     <input type="text" placeholder="Your Name" required>
                     <input type="email" placeholder="Your Email" required>
                     <textarea placeholder="Your Message" rows="5" required></textarea>
-                    <button type="submit"> <i class="fas fa-paper-plane"></i> Send Message </button>
+                    <button type="submit"><i class="fas fa-paper-plane"></i> Send Message </button>
                 </form>
                 <div class="contact-info">
                     <h3>Contact Information</h3>
