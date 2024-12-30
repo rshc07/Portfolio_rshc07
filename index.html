@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=1200">
     <title>Hemachandran-rs-Full-Stack Java Developer</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/ionicons@5.5.2/css/ionicons.min.css">
@@ -239,10 +239,10 @@
         <div class="container">
             <h2>Get In Touch</h2>
             <div class="contact-content">
-                <form class="contact-form">
-                    <input type="text" placeholder="Your Name" required>
-                    <input type="email" placeholder="Your Email" required>
-                    <textarea placeholder="Your Message" rows="5" required></textarea>
+                <form method="post" onsubmit="submitToGoogleSheets(event)" class="contact-form">
+                    <input type="text" name="Name" id="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" id="Email" placeholder="Your Email" required>
+                    <textarea name="Message" id="Message" placeholder="Your Message" rows="5" required></textarea>
                     <button type="submit"><i class="fas fa-paper-plane"></i> Send Message </button>
                 </form>
                 <div class="contact-info">
