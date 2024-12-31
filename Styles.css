@@ -239,12 +239,13 @@ nav {
   display: flex;
   justify-content: center;
   margin-left: 40px;
+  margin-top: 40px;
 }
 
 .section-about .about-image img {
   max-width: 100%;
   width: 500px;
-  height: auto;
+  height: 600px;
   border-radius: 15px;
   box-shadow: 0 20px 30px rgba(0, 0, 0, 0.1);
   margin-left: 120px;
